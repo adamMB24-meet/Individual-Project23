@@ -1,14 +1,69 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>home.html</title>
     <style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  color: #007bff;
+}
+
+h2 {
+    text-align: center;
+  color: #333;
+}
+
+ul {
+    text-align: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  text-align: center;
+  margin: 5px 0;
+}
+
+a {
+    width: 100;
+    text-align: center;
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+    width: 100;
+    text-align: center;
+  color: #0056b3;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
 
     </style>
 </head>
 <body>
-
   <h1>AIMUSE-HOME PAGE</h1>
              
             <h2> Artworks </h2>
@@ -19,7 +74,7 @@
                 <li> {{imgs[img]['style']}} </li>
                 <li> {{imgs[img]['description']}} </li>
                 <li> {{imgs[img]['title']}} </li>
-                <a><src = {{imgs[img][image]}}></a>
+                <img src= {{imgs[img]['image']}}>
                 {% endfor %}
             </ul>
 <!--['title']['artist']['style']['description']['image']--->
