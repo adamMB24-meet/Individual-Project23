@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home.html</title>
+    <style>
+
+    </style>
+</head>
+<body>
+
+  <h1>AIMUSE-HOME PAGE</h1>
+             
+            <h2> Artworks </h2>
+            <ul>
+                {% for img in imgs %}
+                <li> {{imgs[img]['title']}} </li>
+                <li> {{imgs[img]['artist']}} </li>
+                <li> {{imgs[img]['style']}} </li>
+                <li> {{imgs[img]['description']}} </li>
+                <li> {{imgs[img]['title']}} </li>
+                <a><src = {{imgs[img][image]}}></a>
+                {% endfor %}
+            </ul>
+<!--['title']['artist']['style']['description']['image']--->
+
+ 
+ <a href="http://127.0.0.1:5000/imgs"><button>Go to submit your artwork!</button></a>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>all_posts</title>
+</head>
+<body>
+    <h1>All Post Page - AI MUSE</h1>
+    <div>
+        <ul>
+            {% for post in posts %}
+            <li>{{ post }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div>
+        <a href="http://127.0.0.1:5000/home"><button>Go to Home Page</button></a> 
+    </div>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>img6</title>
+    <style>
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  color: #007bff;
+}
+
+div {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+img {
+  display: block;
+  margin: 10px auto;
+  max-width: 100%;
+  height: auto;
+  border: 5px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+p {
+  margin: 10px 0;
+  color: #666;
+  text-align: center;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;
+}
+
+a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #007bff;
+}
+
+   
+    </style>
+</head>
+<body>
+  <h1>AIMUSE-IMG6 PAGE</h1>
+<!----Sixth drawing---->
+ <div>
+    <div>
+        <h2>Image #6</h2>
+      <img src="/static/img6.jpg" alt="" width="600" height="533"> 
+       <p> Name: A man under his vine and under his light,
+          Artist: Unknown,
+          AI On Canvas,  What do you think the painting means? </p>
+        <form method = "POST", action="/img6">
+           <div>
+               <input type="text" name="post6" maxlength="280" size="60">
+           </div>
+           <a href="all_posts.html" value = "submit"><button>submit comment</button></a> 
+        </form>
+     <a href="http://127.0.0.1:5000/img5"><button>Go back - drawing #5</button></a>  
+     </div>
+    <a href="http://127.0.0.1:5000/all_posts"><button>Go to Posts Page</button></a>
+    <div>
+      <a href="http://127.0.0.1:5000/home"><button>Go to Home Page</button></a>  
+    </div>
+ </div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>img3</title>
+    <style>
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  color: #007bff;
+}
+
+div {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+img {
+  display: block;
+  margin: 10px auto;
+  max-width: 100%;
+  height: auto;
+  border: 5px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+p {
+  margin: 10px 0;
+  color: #666;
+  text-align: center;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;
+}
+
+a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #007bff;
+}
+
+
+    </style>
+</head>
+<body>
+  <h1>AIMUSE-IMG3 PAGE</h1>
+<!----Third drawing---->
+ <div>
+    <div>
+        <h2>Image #3</h2>
+      <img src="/static/img3.jpg" alt="" width="600" height="533"> 
+       <p> Name: Telescope to Space,
+          Artist: Uknown,
+          AI On Canvas, 
+The painting depicts a telescope like taking a view at a planet, the planet looks like he has a face. the unknown artist claims that this is a painting to glorify the human race space curiosity and our lust to find life out of space. What do you think the painting means?  </p>
+        <form method = "POST", action="/img3">
+           <div>
+               <input type="text" name="post3" maxlength="280" size="60">
+           </div> 
+           <a href="http://127.0.0.1:5000/all_posts" value = "submit"><button>submit comment</button></a>
+        </form>
+    <a href="http://127.0.0.1:5000/img4"><button>Continue- drawing #4</button></a>
+    <a href="http://127.0.0.1:5000/img2"><button>Go back - drawing #2</button></a>     
+     </div>
+    <a href="http://127.0.0.1:5000/home"><button>Go to Home Page</button></a>
+ </div>
+</body>
+</html>

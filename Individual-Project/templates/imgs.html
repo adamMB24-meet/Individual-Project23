@@ -1,0 +1,119 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>imgs.html</title>
+    <style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  color: #007bff;
+}
+
+div {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+h3 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  margin: 10px 0;
+  color: #666;
+}
+
+input[type="text"],
+input[type="image"],
+input[type="submit"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  width: 100%;
+}
+
+input[type="image"] {
+  max-width: 100px;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #007bff;
+  margin-top: 20px;
+}
+
+
+      
+    </style>
+</head>
+<body>
+    <h1>AIMUSE-IMGS SUBMISSION PAGE</h1>
+    <div>
+        <h3>Please Submit your artwork below:</h3>
+        <form method="post" action="/imgs">
+            <div>
+                <p>Title:</p>
+                <input type="text" id="title" name="title" maxlength="100">
+            </div>
+            <div>
+                <p>Artist:</p>
+                <input type="text" id="artist" name="artist" maxlength="100">
+            </div>
+            <div>
+                <p>Style:</p>
+                <input type="text" id="style" name="style" maxlength="100">
+            </div>
+            <div>
+                <p>Description:</p>
+                <input type="text" id="description" name="description" maxlength="280">
+            </div>
+            <div>
+                <p>Image:</p>
+                <input type="text" id="image" name="image" width="200" height="200">
+            </div>
+            <div>
+                <input type="submit" value="Submit" >
+            </div>
+        </form>image
+        <a href="http://127.0.0.1:5000/home"><button>Go to see Images</button></a>
+    </div>
+</body>
+</html>
+
+</body>
+</html>

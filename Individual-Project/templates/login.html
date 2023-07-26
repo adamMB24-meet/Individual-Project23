@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <style>
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+h4 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+p {
+  color: #666;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+input[type="submit"],
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+button:hover {
+  background-color: #0056b3;
+}
+
+a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 10px;
+  color: #007bff;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+    </style>
+</head>
+<body>
+       <form method="post" action="/login">
+        <!-- Heading -->
+        <h4>
+            Log in into account
+        </h4>
+
+        <!-- Subheading -->
+        <p>
+            Please fill up your information below to sign in.
+        </p>
+
+        <!-- Email -->
+        <div>
+            <label>Email address*</label>
+            <div>
+                <input type="email" name="email" id="emailStr" required>
+            </div>
+        </div>
+
+        <!-- Password -->
+        <div>
+            <label>Password*</label>
+            <div class="input-group">
+                <input type="password" name="password" minlength="6" required>
+            </div>
+        </div>
+
+        <!-- Button -->
+        <div>
+            <input type="submit" value="log In">
+        </div>
+      <a href="http://127.0.0.1:5000/home" value = "login"><button>login</button></a>
+    </form>
+    <br>
+    <a href="signup.html" value = "sign up"><button>signup</button></a>
+</body>
+</html>

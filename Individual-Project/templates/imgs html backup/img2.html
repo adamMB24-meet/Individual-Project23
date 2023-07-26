@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>img2</title>
+    <style>
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  color: #007bff;
+}
+
+div {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+img {
+  display: block;
+  margin: 10px auto;
+  max-width: 100%;
+  height: auto;
+  border: 5px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+p {
+  margin: 10px 0;
+  color: #666;
+  text-align: center;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;
+}
+
+a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #007bff;
+}
+
+/* Optional: Add more styling as needed */
+
+    </style>
+</head>
+<body>
+  <h1>AIMUSE-IMG2 PAGE</h1>
+<!----Second drawing---->
+ <div>
+    <div>
+        <h2>Image #2</h2>
+      <img src="/static/img2.jpg" alt="" width="600" height="533"> 
+       <p> Name: Indastrial Nature,
+          Artist: Unknown,
+          AI On Canvas,
+The painting depicts a metal hawk in a savana like area with blurry gray building behind it. The painting is an anti Industrial-Revolutionery saying with claims that the industrial revolution has destroyed our planet's nature.What do you think the painting means?  </p>
+        <form method = "POST", action="/img2">
+           <div>
+               <input type="text" name="post2" maxlength="280" size="60">
+           </div> 
+           <a href="http://127.0.0.1:5000/all_posts" value = "submit"><button>submit comment</button></a>
+        </form>
+    <a href="http://127.0.0.1:5000/img3"><button>Continue - drawing #3</button></a>
+    <a href="http://127.0.0.1:5000/img1"><button>Go back - drawing #1</button></a>    
+     </div>
+    <a href="http://127.0.0.1:5000/home"><button>Go to Home Page</button></a>
+ </div>
+</body>
+</html>
